@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  header{
+    text-align: center;
+    background: linear-gradient(135deg, #D72638, #A71D31);
+    font-size: 2rem;
+    color: white;
+  }
+
+  nav{
+    display: flex;
+    justify-content: center;
+    background: #A71D31;
+    gap: 2rem;
+    padding: 0.5rem;
+  }
+  
+  nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #fff;
+    width: 0;
+    transition: width 0.3s;
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  nav a.active {
+    border-bottom: 2px solid white;
+  }
+
+  section{
+    padding: 4rem 2rem;
+    transform: translateX(-50px);
+    transition: all 1s ease; 
+  }
+
+  section.visible {
+    transform: translateX(0px);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  #about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .project {
+    background: #fff5f5;
+    margin: 1rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .project:hover {
+    transform: translateY(-5px);
+  }
+
+  .skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .skills-list li{
+    background:#F46036;
+    padding: 0.7rem 1.2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+
+
+  footer {
+    background: linear-gradient(135deg, #A71D31, #D72638);
+    color: #fff;
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+
+  footer a{
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+  }
+
+
+  footer a:hover i {
+    transform: scale(1.2);
+  }
+
+  footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+

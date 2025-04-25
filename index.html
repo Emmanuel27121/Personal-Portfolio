@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Ojetunde</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5584fa893.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Emmanuel Ojetunde</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="img/User-avatar.svg.png" alt="Emannuel Ojetunde">
+        <p>Hi! I'm Emmanuel Ojetunde, a second-year Computer Science student at Dalhousie University with a strong passion for software development 
+            and technology. I enjoy building web applications, diving into algorithms, and exploring the latest tools in the tech world. 
+            Currently, I'm focused on expanding my skills in front-end development and love working on projects that create real-world impact.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>A simple weather web app that shows current weather conditions using the OpenWeather API. Built with HTML, CSS, and JavaScript.</p>
+            <p>Ongoing</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal site to showcase my projects, skills, and contact information. Built with HTML, CSS, and a bit of JavaScript.</p>
+            <p>Completed</p>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <a href="https://www.linkedin.com/in/emmanuel-ojetunde-97a000292" target="_blank"><i class="fa-brands fa-linkedin" style="color: #030303;"></i></a>
+            <a href="https://www.instagram.com/emmanue_l127/" target="_blank"><i class="fa-brands fa-instagram" style="color: #030303;"></i></a>
+            <a href="https://github.com/Emmanuel27121" target="_blank"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
+            <a href="mailto:opeoje27@gmail.com"><i class="fa-solid fa-envelope" style="color: #000000;"></i></a>
+            <p>&copy; 2025 Emmanuel Ojetunde. All rights reserved.</p>
+
+        </section>
+
+      </footer>
+
+      <script>
+        const sections = document.querySelectorAll('section');
+        
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else{
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+        });
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        </script>
+
+
+</body>
+</html>
